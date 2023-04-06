@@ -47,6 +47,7 @@ custom_ui := class(creative_device):
     HandleUIButtonClick( Message : widget_message ) : void =
         Player := Message.Player
         if (PlayerUI := GetPlayerUI[Player]):
-
+            PlayerUI.RemoveWidget(PlayerCanvas)
+        
     
             
